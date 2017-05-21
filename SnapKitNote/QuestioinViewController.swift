@@ -26,6 +26,7 @@ class QuestionViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for:indexPath) as UITableViewCell
         cell.textLabel?.text = questionList[indexPath.row].rawValue
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 12)
         return cell
     }
     
