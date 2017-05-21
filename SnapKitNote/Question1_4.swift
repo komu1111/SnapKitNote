@@ -55,7 +55,7 @@ class Question4: QuestionStrategy {
         bgView.addSubview(grayView)
         
         grayView.snp.makeConstraints { (make) -> Void in
-            make.size.equalTo(CGSize(width: UIUtil.deviceWidth, height: UIUtil.deviceHeight))
+            make.leading.bottom.trailing.top.equalToSuperview().offset(0)
         }
         return bgView
     }
